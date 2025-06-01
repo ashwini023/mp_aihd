@@ -8,11 +8,12 @@
       - name: Azure WebApp Settings
         uses: azure/appservice-settings@v1
         with:
-          app-name: aihandwritingrec
+          app-name: nmitproj
           app-settings-json: |
             {
               "startupCommand": "bash startup.sh"
             }
+
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
